@@ -3,10 +3,8 @@ pragma solidity ^0.8.0;
 
 interface ISuperHonk {
 
-    /// @dev function visibility modifiers are `external` in interfaces, 
-    /// and can be `public` in implementations
-    /// @notice `external` functions may not be called internally, 
-    /// while `public` functions can be called by the same contract
+    /// @dev function visibility modifiers are `external` in interfaces
+    /// @notice `external` functions may not be called internally
 
     function count() external view returns (uint256);
 
