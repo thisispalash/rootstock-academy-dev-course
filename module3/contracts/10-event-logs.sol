@@ -5,7 +5,7 @@ contract Cars {
 
     enum CarStatus { parked, driving }
 
-    event LoudSound(uint256 indexed carId);
+    event CarHonk(uint256 indexed carId);
 
     struct Car {
         bytes3 colour;
@@ -62,7 +62,7 @@ contract Cars {
         public
         onlyOwner(carId)
     {
-        emit LoudSound(carId);
+        emit CarHonk(carId);
     }
 
     modifier onlyOwner(
