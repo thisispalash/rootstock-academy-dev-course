@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 contract Cars {
 
-    enum CarStatus { driving, parked }
+    enum CarStatus { parked, driving }
 
     struct Car {
         bytes3 colour;

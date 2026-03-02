@@ -5,7 +5,7 @@ import { ISuperHonk } from "./13-import-target.sol";
 
 contract Cars {
 
-    enum CarStatus { driving, parked }
+    enum CarStatus { parked, driving }
 
     event CarHonk(uint256 indexed carId);
 

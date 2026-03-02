@@ -28,7 +28,7 @@ contract SuperHonk is ISuperHonk {
 
 contract Cars {
 
-    enum CarStatus { driving, parked }
+    enum CarStatus { parked, driving }
 
     event CarHonk(uint256 indexed carId);
 
